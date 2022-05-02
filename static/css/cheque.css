@@ -1,0 +1,311 @@
+@import url(./base.css);
+
+.wrapper{
+    padding-bottom: 15px;
+    max-width: 450px;
+    min-width: 250px;
+    height: 100%;
+}
+
+body{
+    background: rgba(124, 124, 124, 0.1);
+}
+
+
+/* Header */
+.wrapper .header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: #fff;
+    width: 100%; height: 55px;
+
+    display: flex;
+    align-items: center;
+
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 0 16px;
+}
+.wrapper .header .menu-btn{
+    width: 24px;
+    padding: 4px;
+    transition: 0.2s ease-in-out;
+}
+.wrapper .header .menu-btn:active{
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 100%;
+}
+.wrapper .header .title{
+    margin-left: 38px;
+    font-weight: 500;
+    font-size: 19px;
+    color: rgba(0, 0, 0, 0.8);
+}
+/* Header-End */
+
+
+/* Success */
+.wrapper .success__container{
+    background: #a3dc5b;
+    height: 148px;
+    margin-top: 55px;
+    padding: 26px 0 0 16px;
+}
+.wrapper .success__container .title{
+    font-size: 24px;
+    font-weight: 600;
+    color: #fff;
+}
+.wrapper .success__container .amount{
+    margin-top: 8px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 50px;
+}
+/* Success-End */
+
+
+/* Buttons */
+.wrapper .buttons__container{
+    background: #fff;
+}
+.wrapper .buttons__container .show-cheque{
+    padding: 16px 0 16px 16px;
+    border-bottom: 1px solid rgba(124, 124, 124, 0.2);
+}
+.wrapper .buttons__container  .show-cheque .item1{
+    margin-bottom: 5px;
+    font-size: 16px;
+    color: #217ace;
+}
+.wrapper .buttons__container .show-cheque .item2{
+    font-size: 13px;
+    color: rgba(124, 124, 124, 0.9);
+}
+.wrapper .buttons__container .recieve{
+    padding: 16px 0 16px 16px;
+}
+.wrapper .buttons__container .recieve .item1{
+    margin: 0 0 3px 0;
+    font-size: 16px;
+    color: #000;
+}
+.wrapper .buttons__container .recieve .item2{
+    font-size: 14px;
+    color: #217ace;
+}
+/* Buttons-End */
+
+
+/* Interesting */
+
+.title__interesting {
+    font-size: 14px;
+    padding: 30px 15px 0 15px;
+    color: rgba(0, 0, 0, 0.4);
+    margin: 0 0 7px 0;
+}
+
+
+.interesting{
+    padding: 0 0 0 15px;
+    display: flex;
+    overflow-x: scroll;
+}
+.interesting .card{
+    margin: 0 15px 0 0;
+    padding: 10px 0;
+    background: #fff;
+    width: 140px;
+    min-width: 139px;
+    max-width: 141px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.interesting .card .title{
+    font-size: 14px;
+    margin: 5px 0;
+    color: rgba(0, 0, 0, 0.7);
+}
+.interesting .card .price__contaniner{
+    display: flex;
+    flex-direction: column;
+}
+.interesting .card .price__contaniner .price{
+    font-weight: 500;
+    font-size: 15px;
+}
+.interesting .card .price__contaniner .bolip{
+    margin: 3px 0 0 0;
+    display: flex;
+}
+.interesting .card .price__contaniner .bolip .item{
+    font-weight: 500;
+    background: #ffd300;
+    font-size: 15px;
+    margin: 0 5px 0 0;
+}
+.interesting .card .price__contaniner .bolip .month{
+    font-weight: 500;
+    font-size: 13px;
+    color: rgba(0, 0, 0, 0.5);
+}
+
+.turn__back{
+    background: #0f93ff;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    padding: 13px 0;
+    margin: 15px 15px 15px 15px;
+    border-radius: 3px;
+    box-shadow: 0 0 4px rgba(0, 0, 0, 0.4);
+}
+.turn__back a{
+    color: #fff;
+    font-size: 14px;
+}
+
+/* Interesting-End */
+
+
+
+
+
+
+
+
+/* Cheque */
+.main_cheque__container{
+    position: fixed;
+    top: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.86);
+    width: 100%;
+    height: 100%;
+    display: none;
+    align-items: flex-end;
+}
+.main_cheque__container .main_cheque{
+    position: absolute;
+    top: 45%;
+    left: 10%;
+    transform: translateY(-50%);
+    background: #fff;
+    height: 63%;
+    width: 80%;
+    overflow-y: scroll;
+    padding: 0 0 20px 0;
+}
+.main_cheque__container .main_cheque .logo{
+    width: 63px;
+    margin: 6px 0 0 10px;
+    
+}
+.main_cheque__container .main_cheque .title{
+    margin: 0 15px;
+    font-size: 20px;
+}
+.main_cheque__container .main_cheque .success{
+    margin: 10px 0 0 0;
+    background: #79d670;
+    color: #fff;
+    height: 44px;
+    display: flex;
+    align-items: center;
+    font-size: 15px;
+    padding: 0 0 0 15px;
+}
+.main_cheque__container .main_cheque .summa__box{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 15px;
+    
+}
+.main_cheque__container .main_cheque .summa__box .item{
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    width: 50%;
+}
+.main_cheque__container .main_cheque .summa__box .item p{
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 12px;
+    margin: 0 0 3px 0;
+}
+.main_cheque__container .main_cheque .summa__box .item .tenge{
+    font-size: 20px;
+}
+
+
+.main_cheque__container .main_cheque .hr{
+    margin: 3px 15px;
+    height: 1px;
+    background-color: rgb(182, 179, 179);
+}
+
+
+.main_cheque__container .main_cheque .cheque{
+    display: flex;
+    justify-content: space-between;
+    padding: 7px 10px 0 10px;
+
+}
+.main_cheque__container .main_cheque .cheque .item{
+    width: 50%;
+}
+.main_cheque__container .main_cheque .cheque .item p{
+    color: rgba(0, 0, 0, 0.7);
+    font-size: 12px;
+}
+
+
+.main_cheque__container .main_cheque .cheque .first{
+    text-align: end;
+    padding: 0 20px 0 0;
+}
+.main_cheque__container .main_cheque .cheque .second p{
+    color: #000;
+}
+
+
+
+.main_cheque__container .close__container{
+    position: absolute;
+    top: 7%;
+    left: 10%;
+    width: 20px;
+}
+.main_cheque__container .share__container{
+    position: absolute;
+    top: 7%;
+    right: 10%;
+    width: 22px;
+}
+
+
+
+.main_cheque__container .repeat__container,
+.main_cheque__container .star__container {
+    display: flex;
+    flex-direction: column;
+    width: 50%;
+    margin: 0 auto;
+    align-items: center;
+    margin: 18px 0;
+}
+
+.main_cheque__container .repeat__container img,
+.main_cheque__container .star__container img{
+    width: 35px;
+}
+
+.main_cheque__container .repeat__container .text,
+.main_cheque__container .star__container .text{
+    width: 40%;
+    text-align: center;
+    font-size: 13px;
+    color: #fff;
+}
+/* Cheque-End */

@@ -1,0 +1,18 @@
+{
+    "lang": "Russian",
+    "name": "",
+    "scope": "/",
+    "display": "standalone",
+    "start_url": "/",
+    "orientation": "portrait",
+    "background_color": "#fafafa",
+    "theme_color": "#fafafa",
+    "prefer_related_applications": false,
+    "icons": [
+        {
+            "src": "logo.png",
+            "sizes": "2048x2048",
+            "type": "image/png"
+        }
+    ]
+}

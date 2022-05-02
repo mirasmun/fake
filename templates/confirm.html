@@ -1,0 +1,64 @@
+{% extends 'base.html' %}
+
+{% block styles %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/confirm.css') }}">
+{% endblock %}
+
+{% block body %}
+    <main class="wrapper">
+
+        <div class="header">
+            <img class="back-to-pay" src="{{ url_for('static', filename='images/buttons/back-btn.png') }}">
+            <div class="title">Клиенту Kaspi</div>
+        </div>
+
+        
+        <div class="cash__container">
+            <div class="box">
+                <img class="kaspi-gold-image" src="{{ url_for('static', filename='images/items/gold.png') }}">
+                <div class="kaspi-gold">
+                    <div class="kaspi-gold-title">Kaspi Gold</div>
+                    <div class="kaspi-gold-code">Kaspi Gold *2516</div>
+                </div>
+            </div>
+
+            <div class="cash">{{ amount }}</div>
+        </div>
+        
+        <div class="receive-cash__container">
+            <div class="box">
+                <img class="kaspi-gold-image" src="{{ url_for('static', filename='images/items/gold.png') }}">
+                <div class="kaspi-gold">
+                    <div class="kaspi-gold-name">{{ recieve }}</div>
+                    <div class="kaspi-gold-code">Kaspi Gold *{{ random_code }}</div>
+                </div>
+            </div>
+        </div>
+
+        <div class="transfer-amount__container">
+            <div class="title">Сумма перевода</div>
+            <div class="amount">{{ amount }}</div>
+        </div>
+
+        <div class="commission__container">
+            <div class="title">Коммисия</div>
+            <div class="amount">0 ₸</div>
+        </div>
+
+        <div class="debiting-amount__container">
+            <div class="title">Сумма списания</div>
+            <div class="amount">{{ amount }}</div>
+        </div>
+
+
+
+        <div data-next-page class="send-button__container">
+            <input type="submit" value="ПЕРЕВЕСТИ {{ amount }}">
+        </div>
+    </main>
+{% endblock %}
+
+{% block scripts %}
+    <script src="{{ url_for('static', filename='js/libs/jquery.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/confirm.js') }}"></script>
+{% endblock %}

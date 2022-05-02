@@ -1,0 +1,77 @@
+{% extends 'base.html' %}
+
+{% block styles %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/pay.css') }}">
+{% endblock %}
+
+{% block body %}
+    <form class="wrapper" method="POST" action="{{ url_for('confirm') }}">
+
+        <div class="header">
+            <img class="back-btn" src="{{ url_for('static', filename='images/buttons/back-btn.png') }}">
+            <div class="title">Клиенту Kaspi</div>
+        </div>
+
+        
+        <div class="cash__container">
+            <div class="box">
+                <img class="kaspi-gold-image" src="{{ url_for('static', filename='images/items/gold.png') }}">
+                <div class="kaspi-gold-title">Kaspi Gold</div>
+            </div>
+
+            <div class="cash">12 500,00 ₸</div>            
+        </div>
+
+        <div class="navs__container">
+            <ul>
+                <li class="active">ТЕЛЕФОН</li>
+                <li>КАРТА</li>
+            </ul>
+        </div>
+        
+        <div class="phone__container">
+            <div class="box">
+                <label>Телефон получателя</label>
+                <input type="tel" name="phone" autocomplete="off" placeholder="+7 (707) 625-12-53" required>
+            </div>
+            <img src="{{ url_for('static', filename='images/items/user.png') }}" class="user-image">
+        </div>
+
+        <div class="receive__container">
+            <input type="text" name="recieve" autocomplete="off" placeholder="Самат К." required>
+            <div class="desc">Деньги поступят на карту Kaspi Gold</div>
+        </div>
+
+        <div class="money__container">
+            <input type="number" data-money-input name="money" maxlength="10" autocomplete="off" placeholder="0 ₸" required>
+        </div>
+
+        <div class="message__container">
+            <input type="text" data-message-input placeholder="Сообщение получателю">
+            <img src="{{ url_for('static', filename='images/items/user_message.png') }}">
+        </div>
+        
+        <div class="messages">
+            <div class="item">Рахмет!</div>
+            <div class="item">За обед</div>
+            <div class="item">Возвращаю :)</div>
+        </div>
+
+        <div class="commission">
+            Комиссия 0 ₸
+        </div>
+
+        <div class="send-button__container">
+            <input type="submit" value="ПЕРЕВЕСТИ 0 ₸">
+        </div>
+    </form>
+
+
+{% endblock %}
+
+{% block scripts %}
+    <script src="{{ url_for('static', filename='js/libs/jquery.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/libs/jquery.moneymask.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/libs/jquery.maskedinput.min.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/pay.js') }}"></script>
+{% endblock %}

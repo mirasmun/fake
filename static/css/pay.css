@@ -1,0 +1,258 @@
+@import url(./base.css);
+
+.wrapper{
+    background: rgba(124, 124, 124, 0.1);
+    padding-top: 55px;
+    padding-bottom: 15px;
+    max-width: 450px;
+    min-width: 250px;
+    height: 100%;
+}
+
+/* Header */
+.wrapper .header{
+    position: fixed;   
+    top: 0; left: 0;
+    background: #fff;
+    width: 100%; height: 55px;
+
+    display: flex;
+    align-items: center;
+
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 0 16px;
+}
+.wrapper .header .back-btn{
+    width: 25px;
+    transition: 0.2s ease-in-out;
+}
+.wrapper .header .back-btn:active{
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 100%;
+}
+.wrapper .header .title{
+    margin-left: 38px;
+    font-weight: 500;
+    font-size: 19px;
+    color: rgba(0, 0, 0, 0.8);
+}
+/* Header-End */
+
+
+/* Cash */
+.wrapper .cash__container{
+    margin-top: 12px;
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 16px;
+    height: 70px;
+}
+.wrapper .cash__container .box{
+    display: flex;
+    align-items: center;
+}
+.wrapper .cash__container .box .kaspi-gold-image{
+    width: 46px;
+}
+.wrapper .cash__container .box .kaspi-gold-title{
+    margin-left: 16px;
+    font-size: 16px;
+}
+.wrapper .cash__container .cash{
+    font-size: 16px;
+}
+/* Cash-End */
+
+
+/* Navs */
+.wrapper .navs__container{
+    margin-top: 20px;
+    background: #fff;
+}
+.wrapper .navs__container ul{
+    height: 47px;
+    display: flex;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+.wrapper .navs__container ul li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 47px;
+    width: 50%;
+    color: rgba(0, 0, 0, 0.8);
+    text-align: center;
+    font-weight: 500;
+    transition: 0.2s ease-in-out;
+}
+.wrapper .navs__container ul li:active{
+    background: rgba(0, 0, 0, 0.1);
+}
+/* Navs-End */
+
+
+/* Phone */
+.wrapper .phone__container{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #fff;
+    height: 70px;
+    padding: 0 16px;
+}
+.wrapper .phone__container .box{
+    margin-top: 6px;
+    display: flex;
+    flex-direction: column;
+}
+.wrapper .phone__container .box label{
+    color: #808080;
+    font-size: 12px;
+}
+.wrapper .phone__container .box input[type=tel]{
+    outline: none;
+    border: none;
+    word-spacing: 1px;
+    font-size: 16px;
+    margin-top: 3px;
+}
+.wrapper .phone__container .user-image{
+    width: 25px;
+    height: 25px;
+}
+/* Phone-End */
+
+
+/* Receive */
+.wrapper .receive__container{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 0 16px;
+    height: 72px;
+    background: #deb979;
+}
+.wrapper .receive__container input[type=text]{
+    outline: none;
+    border: none;
+    background: none;
+    color: #fff;
+    font-size: 16px;
+    margin-bottom: 2px;
+}
+.wrapper .receive__container input[type=text]::placeholder{
+    color: #fff;
+}
+.wrapper .receive__container .desc{
+    color: #fff;
+    font-size: 13px;
+}
+/* Receive-End */
+
+
+/* Money */
+.wrapper .money__container{
+    background: #fff;
+    margin-top: 25px;
+    display: flex;
+    /* align-items: center;  */
+    justify-content: center;
+    /* width: 50px; */
+    
+    /* width: 70px; */
+    /* text-align: center; */
+}
+.wrapper .money__container input{
+    text-align: center;
+    outline: none;
+    width: 250px;
+    border: none;
+    padding: 14px 0;
+    font-size: 30px;
+    color: rgba(0, 0, 0, 0.8);
+}
+.wrapper .money__container input::placeholder{
+    color: rgba(0, 0, 0, 0.8);
+}
+/* Money-End */
+
+
+/* Message */
+.wrapper .message__container{
+    width: 100%;
+    padding: 0 16px;
+    margin-top: 10px;
+    display: flex;
+    align-items: flex-end;
+}
+.wrapper .message__container input[type=text]{
+    width: 100%;
+    padding-left: 12px;
+    font-size: 16px;
+    height: 70px;
+    border-radius: 10px;
+    outline: none;
+    border: none;
+    color: rgba(0, 0, 0, 0.8);
+}
+.wrapper .message__container input[type=text]::placeholder{
+    color: rgba(128, 128, 128, 0.8);
+}
+.wrapper .message__container img{
+    display: flex;
+    margin-left: 11px;
+    border-radius: 100px;
+    width: 40px;
+    height: 40px;
+}
+/* Message-End */
+
+
+/* MessageS */
+.wrapper .messages{
+    margin-top: 10px;
+    display: flex;
+    padding: 0 16px;
+}
+.wrapper .messages .item{
+    border: 1px solid rgba(128, 128, 128, 0.8);
+    border-radius: 15px;
+    padding: 2px 6px;
+    margin: 0 3px;
+    font-size: 15px;
+}
+.wrapper .messages .item:active{
+    background: rgba(128, 128, 128, 0.095);
+}
+/* MessageS-end */
+
+
+/* Commission */
+.wrapper .commission{
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+    color: rgba(128, 128, 128, 0.8);
+}
+/* Commission-End */
+
+
+/* Send-Button */
+.wrapper .send-button__container{
+    display: flex;
+    justify-content: center;
+    padding: 0 16px;
+}
+.wrapper .send-button__container input[type=submit]{
+    outline: none;
+    border: none;
+    background-color: #0f93ff;
+    color: #fff;
+    width: 100%;
+    height: 47px;
+    border-radius: 3px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+/* Send-Button-End */

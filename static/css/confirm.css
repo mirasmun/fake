@@ -1,0 +1,181 @@
+@import url(./base.css);
+
+body{
+    background: rgba(124, 124, 124, 0.1);
+}
+.wrapper{
+    padding-top: 55px;
+    max-width: 450px;
+    min-width: 250px;
+    height: 100%;
+}
+
+/* Header */
+.wrapper .header{
+    position: fixed; 
+    top: 0; left: 0;
+    background: #fff;
+    width: 100%; height: 55px;
+
+    display: flex;
+    align-items: center;
+
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+    padding: 0 16px;
+}
+.wrapper .header .back-to-pay{
+    width: 25px;
+    transition: 0.2s ease-in-out;
+}
+.wrapper .header .back-to-pay:active{
+    background: rgba(0, 0, 0, 0.1);
+    border-radius: 100%;
+}
+.wrapper .header .title{
+    margin-left: 38px;
+    font-weight: 500;
+    font-size: 19px;
+    color: rgba(0, 0, 0, 0.8);
+}
+/* Header-End */
+
+
+/* Cash */
+.wrapper .cash__container{
+    margin-top: 30px;
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 16px;
+    height: 70px;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.07);
+}
+.wrapper .cash__container .box{
+    display: flex;
+    align-items: center;
+}
+.wrapper .cash__container .box .kaspi-gold-image{
+    width: 46px;
+}
+.wrapper .cash__container .box .kaspi-gold{
+    margin-left: 16px;
+}
+.wrapper .cash__container .box .kaspi-gold .kaspi-gold-title{
+    font-size: 16px;
+    margin-bottom: 3px;
+}
+.wrapper .cash__container .box .kaspi-gold .kaspi-gold-code{
+    color: #808080;
+    font-size: 12px; 
+}
+.wrapper .cash__container .cash{
+    font-size: 16px;
+}
+/* Cash-End */
+
+
+/* Receive-Cash */
+.wrapper .receive-cash__container{
+    margin-top: 12px;
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 16px;
+    height: 70px;
+    box-shadow: 0 1px 0 rgba(0, 0, 0, 0.07);
+}
+.wrapper .receive-cash__container .box{
+    display: flex;
+    align-items: center;
+}
+.wrapper .receive-cash__container .box .kaspi-gold-image{
+    width: 46px;
+}
+.wrapper .receive-cash__container .box .kaspi-gold{
+    margin-left: 16px;
+}
+.wrapper .receive-cash__container .box .kaspi-gold .kaspi-gold-name{
+    font-size: 16px;
+    margin-bottom: 3px;
+}
+.wrapper .receive-cash__container .box .kaspi-gold .kaspi-gold-code{
+    color: #808080;
+    font-size: 12px; 
+}
+.wrapper .receive-cash__container .cash{
+    font-size: 16px;
+}
+/* Receive-Cash-End */
+
+
+/* Transfer-Amount */
+.wrapper .transfer-amount__container{
+    margin-top: 30px;
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 16px;
+    height: 70px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.wrapper .transfer-amount__container > .title,
+.wrapper .transfer-amount__container > .amount{
+    font-size: 16px;
+}
+/* Transfer-Amount-End */
+
+
+/* Commission */
+.wrapper .commission__container{
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 16px;
+    height: 70px;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+.wrapper .commission__container > .title,
+.wrapper .commission__container > .amount{
+    font-size: 16px;
+}
+/* Commission-End */
+
+
+/* Debiting-Amount */
+.wrapper .debiting-amount__container{
+    background: #fff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 16px;
+    height: 70px;
+}
+.wrapper .debiting-amount__container > .title,
+.wrapper .debiting-amount__container > .amount{
+    font-size: 16px;
+}
+/* Debiting-Amount-End */
+
+
+/* Send-Button */
+.wrapper .send-button__container{
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+    padding: 0 16px;
+}
+.wrapper .send-button__container input[type=submit]{
+    outline: none;
+    border: none;
+    background-color: #0f93ff;
+    color: #fff;
+    width: 100%;
+    height: 47px;
+    border-radius: 3px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+/* Send-Button-End */

@@ -1,0 +1,168 @@
+{% extends 'base.html' %}
+
+{% block styles %}
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/cheque.css') }}">
+{% endblock %}
+
+{% block body %}
+<main class="wrapper">
+
+    <div class="header">
+        <img class="menu-btn" src="{{ url_for('static', filename='images/buttons/menu.png') }}">
+        <div class="title">Переводы</div>
+    </div>
+
+    <div class="success__container">
+        <div class="title">Ваш перевод совершен.</div>
+        <div class="amount">{{ amount }}</div>
+    </div>
+
+    <div class="buttons__container">
+        <div class="show-cheque" data-show-cheque>
+            <div class="item1">Показать квитанцию</div>
+            <div class="item2">Квитанцию сохранена в Истории</div>
+        </div>
+        <div class="recieve">
+            <div class="item1">{{ recieve }}</div>
+            <div class="item2">Сохранить в Частые</div>
+        </div>
+    </div>
+
+
+    <!-- Cheque -->
+    <div data-modal-box class="main_cheque__container">
+        <!-- Close -->
+        <img src="{{ url_for('static', filename='images/buttons/close.png') }}" class="close__container">
+        <img src="{{ url_for('static', filename='images/buttons/share.png') }}" class="share__container">
+
+
+        <div class="repeat__container">
+            <img src="{{ url_for('static', filename='images/buttons/refresh.png') }}">
+            <div class="text">Повторить перевод</div>
+        </div>
+        <div class="star__container">
+            <img src="{{ url_for('static', filename='images/buttons/star.png') }}">
+            <div class="text">Сохранить в Частые</div>
+        </div>
+
+
+        <!--  -->
+        <div class="main_cheque">
+            <img src="{{ url_for('static', filename='images/items/kaspi.png') }}" class="logo">
+            <div class="title">Перевод Клиенту Kaspi</div>
+            <div class="success">Перевод успешно совершен</div>
+            <div class="summa__box">
+                <div class="summa item">
+                    <p>Сумма</p>
+                    <div class="tenge">{{ amount }}</div>
+                </div>
+                <div class="komissia item">
+                    <p>Комиссия</p>
+                    <div class="tenge">0 ₸</div>
+                </div>
+            </div>
+
+            <div class="hr"></div>
+            <div class="cheque">
+                <div class="item first">
+                    <p>№ квитанции</p>
+                </div>
+                <div class="item second">
+                    <p>{{ random_numbers }}</p>
+                </div>
+            </div>
+            <div class="cheque">
+                <div class="item first">
+                    <p>Дата</p>
+                </div>
+                <div class="item second">
+                    <p>{{ current_date }}</p>
+                </div>
+            </div>
+            <div class="cheque">
+                <div class="item first">
+                    <p>Отправитель</p>
+                </div>
+                <div class="item second">
+                    <p class="item1">{{ sender }}</p>
+                </div>
+            </div>
+
+            <div class="cheque">
+                <div class="item first">
+                    <p>Откуда</p>
+                </div>
+                <div class="item second">
+                    <p>Kaspi Gold *2516</p>
+                </div>
+            </div>
+            <div class="cheque">
+                <div class="item first">
+                    <p>Получатель</p>
+                </div>
+                <div class="item second">
+                    <p class="item1">{{ recieve }}, Kaspi Gold *{{ random_code }}</p>
+                </div>
+            </div>
+            <div class="cheque">
+                <div class="item first">
+                    <p>Телефон получателя</p>
+                </div>
+                <div class="item second">
+                    <p>{{ phone }}</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Cheque-End -->
+
+    <div class="title__interesting">
+        ВАС МОЖЕТ ЗАИНТЕРЕСОВАТЬ
+    </div>
+    <div class="interesting">
+        <div class="card">
+            <img src="{{ url_for('static', filename='images/items/iphone.jpg') }}" width="70" class="poster">
+            <div class="title">Apple iPhone 11...</div>
+            <div class="price__contaniner">
+                <div class="price">340 000 ₸</div>
+                <div class="bolip">
+                    <div class="item">14 167 ₸</div>
+                    <div class="month">x24</div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <img src="{{ url_for('static', filename='images/items/laptop.jpg') }}" style="margin: 10px 0;" width="100" class="poster">
+            <div class="title">HP 15s-eq1098ur ...</div>
+            <div class="price__contaniner">
+                <div class="price">299 990 ₸</div>
+                <div class="bolip">
+                    <div class="item">18 980 ₸</div>
+                    <div class="month">x24</div>
+                </div>
+            </div>
+        </div>
+        <div class="card">
+            <img src="{{ url_for('static', filename='images/items/samsung.jpg') }}" style="margin: 6px 0;" width="110" class="poster">
+            <div class="title">Samsung Galaxy...</div>
+            <div class="price__contaniner">
+                <div class="price">165 890 ₸</div>
+                <div class="bolip">
+                    <div class="item">10496</div>
+                    <div class="month">x24</div>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <div class="turn__back">
+        <a>ВЕРНУТСЯ В ПЕРЕВОДЫ</a>
+    </div>
+
+</main>
+{% endblock %}
+
+{% block scripts %}
+    <script src="{{ url_for('static', filename='js/libs/jquery.js') }}"></script>
+    <script src="{{ url_for('static', filename='js/cheque.js') }}"></script>
+{% endblock %}

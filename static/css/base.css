@@ -1,0 +1,26 @@
+@font-face {
+    font-family: "Roboto", sans-serif;
+    src: url(../fonts/Roboto-Light.ttf),
+         url(../fonts/Roboto-Regular.ttf),
+         url(../fonts/Roboto-Medium.ttf),
+         url(../fonts/Roboto-Bold.ttf);
+}
+
+html, body, *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Roboto", Verdana, Tahoma, sans-serif;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 0.8);
+    font-size: 14px;
+}
+div, a, ul, li{user-select: none; -moz-user-select: none;}
+ul li{list-style: none;}
+a{text-decoration: none;}
+
+
+.active{
+    color: #f14635 !important; 
+    border-bottom: 2px solid #f14635 !important;
+}
